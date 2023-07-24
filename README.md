@@ -7,16 +7,16 @@
 - VScode + Useful Extension (https://code.visualstudio.com/download)
 - Github(for exercise & assignment) (https://desktop.github.com/)
 - Introduce useful lectures & References.
-- [ ] Setting
+- [x] Setting
   - [x] Vscode + Extension(Prettier, Live Server)
-  - [ ] Github
-  - [ ] Open Live server
-- [ ] Understand Semantic Web
-  - [ ] Head, body, header, nav, footer, script...
-  - [ ] Usage of F12(Devtools) - Dig into W3C, Mozila + brief introduction of those sites
+  - [x] Github
+  - [x] Open Live server
+- [x] Understand Semantic Web
+  - [x] Head, body, header, nav, footer, script...
+  - [x] Usage of F12(Devtools) - Dig into W3C, Mozila + brief introduction of those sites
         (https://www.w3.org/, https://developer.mozilla.org/ko/ )
 - [ ] Understand Each part of Web(tag)
-  - [ ] heading, paragraph, list, strong, br...
+  - [ ] heading, paragraph, list(ul, ol), strong, br...
   - [ ] div
   - [ ] img, input, form
   - [ ] table
