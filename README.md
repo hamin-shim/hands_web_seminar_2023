@@ -20,6 +20,13 @@
   - [ ] img, input, form
   - [ ] table
 
+### Assignment : 나만의 표 만들어보기!
+
+오늘 배운 html, css를 사용하여 나만의 표를 만들어보자! 꼭 table 태그를 사용해야만 하는 것은 아니나, 활용하는 것을 권장함. 예시는 week1>assignment_ex에 담겨있으니 확인하길 바람.
+
+- 영상 게제 기한: 7/25~7/31
+- 과제 제출 기한: 8/1(하루까지 늦은 제출 허용, 경고 누적)
+
 ### Reference
 
 - Youtube 생활코딩(Web, HTML 전반 가볍게) <br/>
