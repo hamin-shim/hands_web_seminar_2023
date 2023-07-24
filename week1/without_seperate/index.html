@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <header style="display: flex; align-items: center">
+      <div class="logo" style="margin-right: 10px">
+        <!-- 로고 -->
+        <img
+          src="https://sejong.korea.ac.kr/mbshome/mbs/kr/images/sub/s_img010201_logo1.png"
+          style="width: 50px"
+        />
+      </div>
+      <a href="https://hands.korea.ac.kr/" style="margin-right: 10px"
+        >고려대학교 HandS</a
+      >
+      <a href="https://ee.korea.ac.kr/main/main.html"
+        >고려대학교 전기전자공학부</a
+      >
+    </header>
+    <main>
+      <div>
+        <div class="h1">
+          <h1>컨텐츠1</h1>
+          <p>
+            상대적으로 덜 중요한 텍스트.. 긴 글 Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Vero, voluptatem voluptas? Eaque autem
+            velit itaque optio. Dolorum, cumque, saepe, quia in velit itaque sit
+            veritatis esse quasi fuga repellat quisquam!
+          </p>
+        </div>
+        <div class="h2">
+          <h2>컨텐츠2</h2>
+          p 태그 있고 없고의 차이? <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+          voluptatem voluptas? Eaque autem velit itaque optio. Dolorum, cumque,
+          saepe, quia in velit itaque sit veritatis esse quasi fuga repellat
+          quisquam!
+        </div>
+        <div class="h3">
+          <h3>컨텐츠3</h3>
+          <p>긴 글 뒤에 넘어가지 않고 그냥 붙이고만 싶다면..?</p>
+          <span>뒤에 붙여지는 span! </span><span>span2 </span
+          ><span>span3 </span>
+        </div>
+        <div class="h4">
+          <h4>표 만들기</h4>
+          <table border="1">
+            <th>열1</th>
+            <th>열2</th>
+            <th>열3</th>
+            <tr>
+              <td>1행 1열</td>
+              <td>1행 2열</td>
+              <td>1행 3열</td>
+            </tr>
+            <tr>
+              <td>2행 1열</td>
+              <td>2행 2열</td>
+              <td>2행 3열</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="h5">
+          <h5>입력창 만들기</h5>
+          <form>
+            <input type="text" placeholder="일반 입력" />
+            <input type="password" placeholder="비밀번호 입력" />
+            <input type="submit" />
+          </form>
+        </div>
+        <div class="h6">
+          <h6>div로 박스 만들기</h6>
+          <div class="container" style="display: flex">
+            <div style="width: 50px; height: 50px; background-color: red">
+              1
+            </div>
+            <div style="width: 50px; height: 50px; background-color: orange">
+              2
+            </div>
+            <div style="width: 50px; height: 50px; background-color: yellow">
+              3
+            </div>
+            <div style="width: 50px; height: 50px; background-color: green">
+              4
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>카운터 만들기</h3>
+      <div class="countWrapper" style="display: flex; margin: 10px 0">
+        <button id="plusBtn">+</button>
+        <div id="count" style="margin: 0 10px">0</div>
+        <button id="minusBtn">-</button>
+      </div>
+    </main>
+    <footer>푸터</footer>
+  </body>
+  <script>
+    console.log("hi");
+    const plusBtn = document.getElementById("plusBtn");
+    const minusBtn = document.getElementById("minusBtn");
+    const count = document.getElementById("count");
+    function addCount() {
+      var newCount = parseInt(count.innerHTML);
+      count.innerHTML = newCount + 1;
+    }
+    function minusCount() {
+      var newCount = parseInt(count.innerHTML);
+      count.innerHTML = newCount - 1;
+    }
+    plusBtn.addEventListener("click", addCount);
+    minusBtn.addEventListener("click", minusCount);
+  </script>
+</html>
