@@ -19,3 +19,8 @@
   - [ ] div
   - [ ] img, input, form
   - [ ] table
+
+### Reference
+- Youtube 생활코딩(Web, HTML 전반 가볍게) <br/>
+ https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb
+ 
