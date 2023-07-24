@@ -8,7 +8,7 @@
 - Github(for exercise & assignment) (https://desktop.github.com/)
 - Introduce useful lectures & References.
 - [ ] Setting
-  - [ ] Vscode + Extension(Prettier, Live Server)
+  - [x] Vscode + Extension(Prettier, Live Server)
   - [ ] Github
   - [ ] Open Live server
 - [ ] Understand Semantic Web
