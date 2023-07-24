@@ -4,8 +4,8 @@
 
 ## 0 Development Setting + Preview of Web! (7/24)
 
-- VScode + Useful Extension
-- Github(for exercise & assignment)
+- VScode + Useful Extension (https://code.visualstudio.com/download)
+- Github(for exercise & assignment) (https://desktop.github.com/)
 - Introduce useful lectures & References.
 - [ ] Setting
   - [ ] Vscode + Extension(Prettier, Live Server)
@@ -14,6 +14,7 @@
 - [ ] Understand Semantic Web
   - [ ] Head, body, header, nav, footer, script...
   - [ ] Usage of F12(Devtools) - Dig into W3C, Mozila + brief introduction of those sites
+        (https://www.w3.org/, https://developer.mozilla.org/ko/ )
 - [ ] Understand Each part of Web(tag)
   - [ ] heading, paragraph, list, strong, br...
   - [ ] div
