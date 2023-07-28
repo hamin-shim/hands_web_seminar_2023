@@ -1,0 +1,25 @@
+.todoContainer {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+}
+.todo {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid red;
+  margin: 15px 0;
+}
+.todoText {
+  margin-left: 5px;
+  width: 85%;
+}
+.trash {
+  margin-left: 10px;
+}
+.done {
+  text-decoration: line-through;
+}

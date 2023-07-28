@@ -29,3 +29,8 @@
   https://inpa.tistory.com/entry/VS-Code-%E2%8F%B1%EF%B8%8F-HTML-CSS-%EB%8F%84%EA%B5%AC-%EC%B6%94%EC%B2%9C
 - Prettier 적용 안될 시 <br/>
   https://yjg-lab.tistory.com/91
+
+## 1 More about HTML/CSS/JS (7/31)
+
+- [ ] Make To-do UI
+- [ ] Understand

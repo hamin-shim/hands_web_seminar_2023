@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To-Do!</h1>
+    <div class="todoContainer">
+      <div class="todo">
+        <input class="checkbox" type="checkbox" />
+        <div class="todoText">웹세미나 자료 만들기</div>
+        <div class="trash">🗑️</div>
+      </div>
+      <div class="todo">
+        <input class="checkbox" type="checkbox" />
+        <div class="todoText">자연어처리 강의 듣기</div>
+        <div class="trash">🗑️</div>
+      </div>
+    </div>
+    <h2>Add new To Do</h2>
+    <form>
+      <input
+        type="text"
+        id="newTodoText"
+        style="width: 150px"
+        placeholder="새로운 할 일"
+      />
+      <input type="submit" id="submitBtn" value="추가" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
