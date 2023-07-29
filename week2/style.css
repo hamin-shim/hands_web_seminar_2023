@@ -19,7 +19,12 @@
 }
 .trash {
   margin-left: 10px;
+  cursor: pointer;
 }
 .done {
   text-decoration: line-through;
+}
+
+.hide {
+  display: none;
 }
