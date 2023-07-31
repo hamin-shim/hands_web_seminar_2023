@@ -2,12 +2,14 @@
 
 2023년 여름방학에 진행된 핸즈 세미나 "나만의 웹사이트 만들기"의 강의 코드 예제 및 과제를 위한 저장소입니다.
 
-## 1 More about Javascript (7/31)
+## 1 More about Javascript + Introduce Bootstrap(7/31)
 
 - Understand how javascript works
 - Make To-Do app!
   - [ ] Make UI of todo
   - [ ] Add function(add todo, delete todo)
+- Take a look at Bootstrap
+  - [ ] Get Bootstrap cdn(without download!)
 
 ### Assignment : 나만의 투두 어플 만들기!
 
