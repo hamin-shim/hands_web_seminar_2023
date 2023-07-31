@@ -21,8 +21,8 @@ function makeNewTodo(text) {
 
   todoContaiiner.prepend(newTodoBox);
 }
-// makeNewTodo("1번째 할 일");
-// makeNewTodo("2번째 할 일");
+makeNewTodo("1번째 할 일");
+makeNewTodo("2번째 할 일");
 
 const checkboxes = document.querySelectorAll("input.checkbox");
 function toggleTodo(e) {
@@ -52,12 +52,6 @@ function deleteTodo(e) {
   if (ok) {
     const todoContainer = document.querySelector(".todoContainer");
     todoContainer.removeChild(toggledTodo);
-    console.log(todoContainer.children.length);
-    if (todoContainer.children.length == 1) {
-      console.log("hi");
-      const emptyNotice = document.querySelector(".emptyNotice");
-      emptyNotice.classList.toggle("hide");
-    }
   }
 }
 trashIcons.forEach((element) => element.addEventListener("click", deleteTodo));
