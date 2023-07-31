@@ -2,6 +2,20 @@
 
 2023년 여름방학에 진행된 핸즈 세미나 "나만의 웹사이트 만들기"의 강의 코드 예제 및 과제를 위한 저장소입니다.
 
+## 1 More about Javascript (7/31)
+
+- Understand how javascript works
+- Make To-Do app!
+  - [ ] Make UI of todo
+  - [ ] Add function(add todo, delete todo)
+
+### Assignment : 나만의 투두 어플 만들기!
+
+오늘 함께 만든 투두 어플을 내 입맛대로 꾸미고, 하나의 사소하지만 소중한 새로운 기능을 추가해보자! ex) 수정 기능, 고정 기능, 사진 넣기 기능, 마감 기한 넣기 등..
+
+- 영상 게제 기한: 8/2~8/9
+- 과제 제출 기한: 8/9(하루 늦은 제출까지 허용, 경고 누적)
+
 ## 0 Development Setting + Preview of Web! (7/24)
 
 - VScode + Useful Extension (https://code.visualstudio.com/download)
