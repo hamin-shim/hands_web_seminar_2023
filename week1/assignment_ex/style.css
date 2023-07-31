@@ -1,0 +1,28 @@
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 600px;
+  text-align: left;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+td {
+  padding: 10px;
+}
+.minus {
+  color: blue;
+}
+.plus {
+  color: red;
+}
+.poor_image {
+  background-image: url("https://newsimg.sedaily.com/2023/04/17/29OC6F04WS_5.jpg");
+  height: 300px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+th {
+  background-color: bisque;
+}

@@ -12,16 +12,25 @@
       <div class="logo" style="margin-right: 10px">
         <!-- 로고 -->
         <img
-          src="https://sejong.korea.ac.kr/mbshome/mbs/kr/images/sub/s_img010201_logo1.png"
-          style="width: 50px"
+          src="cat.jpg"
+          style="
+            width: 50px;
+            height: 10px;
+            object-fit: cover;
+            border: 1px solid black;
+          "
         />
       </div>
       <a href="https://hands.korea.ac.kr/" style="margin-right: 10px"
         >고려대학교 HandS</a
       >
-      <a href="https://ee.korea.ac.kr/main/main.html"
+      <a href="https://ee.korea.ac.kr/main/main.html" style="margin-right: 10px"
         >고려대학교 전기전자공학부</a
       >
+      <a href="../seperation/index.html" style="margin-right: 10px"
+        >내가 만든 다른 웹사이트</a
+      >
+      <a href="https://www.naver.com/">네이버로 가기</a>
     </header>
     <main>
       <div>
@@ -31,8 +40,13 @@
             상대적으로 덜 중요한 텍스트.. 긴 글 Lorem, ipsum dolor sit amet
             consectetur adipisicing elit. Vero, voluptatem voluptas? Eaque autem
             velit itaque optio. Dolorum, cumque, saepe, quia in velit itaque sit
-            veritatis esse quasi fuga repellat quisquam!
+            veritatis esse quasi fuga repellat quisquam! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Maxime aut labore, fuga nemo
+            facilis similique, atque libero, numquam iusto quibusdam repellat?
+            Quia distinctio eveniet, sapiente atque laboriosam officiis ex
+            aliquid!
           </p>
+          <p>안녕하세요?</p>
         </div>
         <div class="h2">
           <h2>컨텐츠2</h2>
@@ -45,8 +59,9 @@
         <div class="h3">
           <h3>컨텐츠3</h3>
           <p>긴 글 뒤에 넘어가지 않고 그냥 붙이고만 싶다면..?</p>
-          <span>뒤에 붙여지는 span! </span><span>span2 </span
-          ><span>span3 </span>
+          <span>뒤에 붙여지는 span! </span>
+          <span>span2</span>
+          <span>span3 </span>
         </div>
         <div class="h4">
           <h4>표 만들기</h4>
@@ -77,17 +92,53 @@
         </div>
         <div class="h6">
           <h6>div로 박스 만들기</h6>
-          <div class="container" style="display: flex">
-            <div style="width: 50px; height: 50px; background-color: red">
+          <div class="container" style="display: flex; flex-wrap: wrap">
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: red"
+            >
               1
             </div>
-            <div style="width: 50px; height: 50px; background-color: orange">
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: orange"
+            >
               2
             </div>
-            <div style="width: 50px; height: 50px; background-color: yellow">
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: yellow"
+            >
               3
             </div>
-            <div style="width: 50px; height: 50px; background-color: green">
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: green"
+            >
+              4
+            </div>
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: red"
+            >
+              1
+            </div>
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: orange"
+            >
+              2
+            </div>
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: yellow"
+            >
+              3
+            </div>
+            <div
+              class="box"
+              style="width: 50px; height: 50px; background-color: green"
+            >
               4
             </div>
           </div>
@@ -100,13 +151,20 @@
         <button id="minusBtn">-</button>
       </div>
     </main>
-    <footer>푸터</footer>
+    <footer style="margin-bottom: 200px">푸터</footer>
   </body>
   <script>
-    console.log("hi");
+    // console.log("hi");
+    console.log(document);
+    // const a = document.getElementsByClassName("box");
     const plusBtn = document.getElementById("plusBtn");
     const minusBtn = document.getElementById("minusBtn");
     const count = document.getElementById("count");
+    console.log(plusBtn, minusBtn, count);
+
+    plusBtn.addEventListener("mouseover", addCount);
+    minusBtn.addEventListener("click", minusCount);
+
     function addCount() {
       var newCount = parseInt(count.innerHTML);
       count.innerHTML = newCount + 1;
@@ -115,7 +173,5 @@
       var newCount = parseInt(count.innerHTML);
       count.innerHTML = newCount - 1;
     }
-    plusBtn.addEventListener("click", addCount);
-    minusBtn.addEventListener("click", minusCount);
   </script>
 </html>
