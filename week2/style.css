@@ -28,3 +28,11 @@
 .hide {
   display: none;
 }
+.boxes {
+  display: flex;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
