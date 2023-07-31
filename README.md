@@ -4,12 +4,12 @@
 
 ## 1 More about Javascript + Introduce Bootstrap(7/31)
 
-- Understand how javascript works
+- [x] Understand how javascript works
 - Make To-Do app!
-  - [ ] Make UI of todo
-  - [ ] Add function(add todo, delete todo)
+  - [x] Make UI of todo
+  - [x] Add function(add todo, delete todo)
 - Take a look at Bootstrap
-  - [ ] Get Bootstrap cdn(without download!)
+  - [x] Get Bootstrap cdn(without download!)
 
 ### Assignment : 나만의 투두 어플 만들기!
 
