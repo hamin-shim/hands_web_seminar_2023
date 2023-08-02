@@ -1,5 +1,6 @@
 # hands_web_seminar_2023
 
+<a href="https://elderly-podium-4c3.notion.site/1bd6e64d4df94e5aa347df001e87a4e0?v=830240d32b2546d586fa582467e46576"><img src="https://img.shields.io/badge/Notion Link-3766AB?style=flat-square&logo=Notion&logoColor=white"/></a><br/>
 2023년 여름방학에 진행된 핸즈 세미나 "나만의 웹사이트 만들기"의 강의 코드 예제 및 과제를 위한 저장소입니다.
 
 ## 1 More about Javascript + Introduce Bootstrap(7/31)
@@ -45,10 +46,12 @@
 - 과제 제출 기한: 8/1(하루까지 늦은 제출 허용, 경고 누적)
 
 ### Reference
-
+- Github 사용법(노마드코더)<br/>
+  https://nomadcoders.co/git-for-beginners
+- JS, React 등 생활코딩 다음 강의 추천(노마드코더)<br/>
+  https://nomadcoders.co/javascript-for-beginners
 - Youtube 생활코딩(Web, HTML 전반 가볍게) <br/>
   https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb
-
 - VSCode extension 추천 <br/>
   https://inpa.tistory.com/entry/VS-Code-%E2%8F%B1%EF%B8%8F-HTML-CSS-%EB%8F%84%EA%B5%AC-%EC%B6%94%EC%B2%9C
 - Prettier 적용 안될 시 <br/>
