@@ -2,6 +2,11 @@
 
 2023년 여름방학에 진행된 핸즈 세미나 "나만의 웹사이트 만들기"의 강의 코드 예제 및 과제를 위한 저장소입니다.
 
+## 2 React is all you need
+
+- What is React?
+- Make To-Do app with React
+
 ## 1 More about Javascript (7/31)
 
 - Understand how javascript works
