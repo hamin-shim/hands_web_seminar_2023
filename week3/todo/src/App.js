@@ -8,10 +8,22 @@ function App() {
   const onSubmit = (event) => {
     event.preventDefault();
     if (toDo === "") {
-      return;
+      return alert("Empty todo!");
     }
     setToDos((currentArray) => [toDo, ...currentArray]);
     setToDo("");
+  };
+  const deleteTodo = (id) => {
+    let oldToDos = toDos;
+    oldToDos = oldToDos.filter((todo, idx) => idx != id);
+    setToDos(oldToDos);
+  };
+  const onTrashClick = (event) => {
+    const element = event.target.parentNode;
+    const ok = window.confirm(`Delete <${element.innerText.slice(0, -3)}>?`);
+    if (ok) {
+      deleteTodo(element.id);
+    }
   };
   return (
     <div>
@@ -25,6 +37,17 @@ function App() {
         />
         <button>Add To Do</button>
       </form>
+      <hr />
+      <ul>
+        {toDos.map((item, index) => (
+          <li key={index} id={index}>
+            {item}
+            <span className="trash" onClick={onTrashClick}>
+              🗑️
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
