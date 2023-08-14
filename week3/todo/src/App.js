@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
   const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState([]);
+  useEffect(() => {
+    const localTodos = localStorage.getItem("todos").split(",");
+    console.log(localTodos);
+    setToDos(localTodos);
+  }, []);
+  useEffect(() => {
+    console.log("todo changed");
+    if (toDos.length !== 0) localStorage.setItem("todos", toDos);
+  }, [toDos]);
+
   const onChange = (event) => setToDo(event.target.value);
   const onSubmit = (event) => {
     event.preventDefault();
@@ -15,7 +25,7 @@ function App() {
   };
   const deleteTodo = (id) => {
     let oldToDos = toDos;
-    oldToDos = oldToDos.filter((todo, idx) => idx != id);
+    oldToDos = oldToDos.filter((todo, idx) => idx !== id);
     setToDos(oldToDos);
   };
   const onTrashClick = (event) => {
@@ -24,6 +34,15 @@ function App() {
     if (ok) {
       deleteTodo(element.id);
     }
+  };
+  const onEditTodo = (event) => {
+    const element = event.target.parentNode;
+    const editTodo = window.prompt("Edit content:", "New todo");
+    const newTodos = toDos.map((todo, idx) => {
+      if (idx === Number(element.id)) todo = editTodo;
+      return todo;
+    });
+    setToDos(newTodos);
   };
   return (
     <div>
@@ -42,6 +61,9 @@ function App() {
         {toDos.map((item, index) => (
           <li key={index} id={index}>
             {item}
+            <span className="edit" onClick={onEditTodo}>
+              ✏️
+            </span>
             <span className="trash" onClick={onTrashClick}>
               🗑️
             </span>
