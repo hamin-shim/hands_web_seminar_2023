@@ -3,6 +3,11 @@
 <a href="https://elderly-podium-4c3.notion.site/1bd6e64d4df94e5aa347df001e87a4e0?v=830240d32b2546d586fa582467e46576"><img src="https://img.shields.io/badge/Notion Link-3766AB?style=flat-square&logo=Notion&logoColor=white"/></a><br/>
 2023년 여름방학에 진행된 핸즈 세미나 "나만의 웹사이트 만들기"의 강의 코드 예제 및 과제를 위한 저장소입니다.
 
+## 2 React is ALL You need!
+
+- Use React, make Todo app!(much much easily)
+- Deploy your own-website by Netlify
+
 ## 1 More about Javascript + Introduce Bootstrap(7/31)
 
 - [x] Understand how javascript works
@@ -46,6 +51,7 @@
 - 과제 제출 기한: 8/1(하루까지 늦은 제출 허용, 경고 누적)
 
 ### Reference
+
 - Github 사용법(노마드코더)<br/>
   https://nomadcoders.co/git-for-beginners
 - JS, React 등 생활코딩 다음 강의 추천(노마드코더)<br/>
