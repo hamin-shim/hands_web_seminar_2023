@@ -3,12 +3,12 @@
 <a href="https://elderly-podium-4c3.notion.site/1bd6e64d4df94e5aa347df001e87a4e0?v=830240d32b2546d586fa582467e46576"><img src="https://img.shields.io/badge/Notion Link-3766AB?style=flat-square&logo=Notion&logoColor=white"/></a><br/>
 2023년 여름방학에 진행된 핸즈 세미나 "나만의 웹사이트 만들기"의 강의 코드 예제 및 과제를 위한 저장소입니다.
 
-## 2 React is all you need
+## 2 React is ALL You need!
 
-- What is React?
-- Make To-Do app with React
+- Use React, make Todo app!(much much easily)
+- Deploy your own-website by Netlify
 
-## 1 More about Javascript (7/31)
+## 1 More about Javascript + Introduce Bootstrap(7/31)
 
 - [x] Understand how javascript works
 - Make To-Do app!
