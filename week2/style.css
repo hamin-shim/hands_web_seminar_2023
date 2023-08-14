@@ -1,38 +1,30 @@
-.todoContainer {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 20px;
-  width: 500px;
+.red {
+  color: red;
+}
+.toDoContainer {
+  border: 2px dashed pink;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 25px;
+  padding: 15px;
+  width: 800px;
 }
 .todo {
-  padding-top: 15px;
-  padding-bottom: 5px;
-  align-items: center;
+  margin: 30px auto;
+  font-size: 20px;
   display: flex;
-  width: 100%;
-  border-bottom: 1px solid red;
-  margin: 15px 0;
+  border-bottom: 1px solid black;
+  width: 80%;
 }
 .todoText {
-  margin-left: 5px;
-  width: 85%;
-}
-.trash {
   margin-left: 10px;
-  cursor: pointer;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .done {
   text-decoration: line-through;
 }
-
-.hide {
-  display: none;
-}
-.boxes {
-  display: flex;
-}
-.box {
-  width: 200px;
-  height: 200px;
-  background: blue;
+.trash {
+  cursor: pointer;
 }

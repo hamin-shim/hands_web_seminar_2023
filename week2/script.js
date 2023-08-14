@@ -1,57 +1,73 @@
-function makeNewTodo(text) {
-  const todoContaiiner = document.getElementsByClassName("todoContainer")[0];
-  const newTodoBox = document.createElement("div");
-  newTodoBox.className = "todo";
-
-  const newTodoCheck = document.createElement("input");
-  newTodoCheck.type = "checkbox";
-  newTodoCheck.className = "checkbox";
-
-  const newTodoText = document.createElement("div");
-  newTodoText.className = "todoText";
-  newTodoText.innerHTML = text;
-
-  const trashIcon = document.createElement("div");
-  trashIcon.className = "trash";
-  trashIcon.innerHTML = "🗑️";
-
-  newTodoBox.appendChild(newTodoCheck);
-  newTodoBox.appendChild(newTodoText);
-  newTodoBox.appendChild(trashIcon);
-
-  todoContaiiner.prepend(newTodoBox);
+// console.log("안녕하세요");
+// const arr = ["1번", "2번", "3번"];
+// arr.map((e) => document.write(e + "입니다<br/>"));
+// arr.forEach((e) => document.write("<div class='red'>", e, "</div>"));
+// document.write("출력이 되나요?");
+const todoContainer = document.querySelector(".toDoContainer");
+reload();
+function todoClicked(event) {
+  const todo = event.target.parentNode;
+  const todoText = todo.children[1].children[0];
+  console.log(todoText);
+  todoText.classList.toggle("done");
 }
-makeNewTodo("1번째 할 일");
-makeNewTodo("2번째 할 일");
 
-const checkboxes = document.querySelectorAll("input.checkbox");
-function toggleTodo(e) {
-  const toggledTodo = e.target.parentElement;
-  console.log(toggledTodo);
+function addTodo(text) {
+  const newTodo = document.createElement("div");
+  newTodo.className = "todo";
 
-  const toggleTodoText = toggledTodo.children[1];
-  toggleTodoText.classList.toggle("done");
+  const newCheck = document.createElement("input");
+  newCheck.type = "checkbox";
+  newCheck.className = "checkbox";
+
+  const newText = document.createElement("div");
+  newText.className = "todoText";
+
+  const spanText = document.createElement("span");
+  spanText.className = "text";
+  spanText.innerText = text;
+
+  const spanTrash = document.createElement("span");
+  spanTrash.className = "trash";
+  spanTrash.innerText = "🗑️";
+
+  newText.appendChild(spanText);
+  newText.appendChild(spanTrash);
+
+  newTodo.appendChild(newCheck);
+  newTodo.appendChild(newText);
+
+  todoContainer.prepend(newTodo);
 }
-checkboxes.forEach((element) => element.addEventListener("change", toggleTodo));
 
-const todoForm = document.getElementsByTagName("form")[0];
-todoForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const newTodoText = inputTodo.value;
-  makeNewTodo(newTodoText);
-  inputTodo.value = "";
-});
-const inputTodo = document.getElementById("newTodoText");
+const todoForm = document.querySelector("form");
+function getInputAndAdd(event) {
+  event.preventDefault();
+  const todoInput = document.querySelector(".newTodo");
+  addTodo(todoInput.value);
+  todoInput.value = "";
+  reload();
+}
+todoForm.addEventListener("submit", getInputAndAdd);
 
-const trashIcons = document.querySelectorAll(".trash");
-function deleteTodo(e) {
-  const toggledTodo = e.target.parentElement;
-  const toggleTodoText = toggledTodo.children[1].innerHTML;
-  console.log(toggleTodoText);
-  const ok = confirm("[" + toggleTodoText + "] 할 일을 삭제하시겠습니까?");
+function todoDelete(event) {
+  const clickedTodoText = event.target.parentNode.children[0].innerText;
+  console.log(clickedTodoText);
+  const removeTodo = event.target.parentNode.parentNode;
+  const ok = confirm("[" + clickedTodoText + "]을/를 삭제하시겠습니까?");
   if (ok) {
-    const todoContainer = document.querySelector(".todoContainer");
-    todoContainer.removeChild(toggledTodo);
+    removeTodo.remove();
   }
 }
-trashIcons.forEach((element) => element.addEventListener("click", deleteTodo));
+function reload() {
+  let checkboxes = document.querySelectorAll(".checkbox");
+  let trashIcons = document.querySelectorAll(".trash");
+  console.log(checkboxes);
+  checkboxes.forEach((element) => {
+    element.addEventListener("click", (event) => todoClicked(event));
+  });
+
+  trashIcons.forEach((element) => {
+    element.addEventListener("click", (event) => todoDelete(event));
+  });
+}

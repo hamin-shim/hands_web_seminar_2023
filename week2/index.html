@@ -3,45 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do!</title>
+    <title>2주차 강의</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <h1>To-Do!</h1>
-    <div class="todoContainer">
-      <div class="todo">
-        <input class="checkbox" type="checkbox" />
-        <div class="todoText">웹세미나 자료 만들기</div>
-        <div class="trash">🗑️</div>
+    <main>
+      <h1>To Do!</h1>
+      <div class="date">날짜: 2023/07/31</div>
+      <div class="toDoContainer">
+        <div class="todo">
+          <input type="checkbox" class="checkbox" />
+          <div class="todoText">
+            <span class="text">1번 항목</span><span class="trash">🗑️</span>
+          </div>
+        </div>
       </div>
-      <div class="todo">
-        <input class="checkbox" type="checkbox" />
-        <div class="todoText">자연어처리 강의 듣기</div>
-        <div class="trash">🗑️</div>
+      <div class="addTodoPart">
+        <h1>Add To do!</h1>
+        <form>
+          <input type="text" class="newTodo" placeholder="새로운 할 일" />
+          <input type="submit" value="추가" />
+        </form>
       </div>
-      <div class="emptyNotice hide">아직 할 일이 없어요! 추가해보세요~</div>
-    </div>
-    <h2>Add new To Do</h2>
-    <form>
-      <input
-        type="text"
-        id="newTodoText"
-        style="width: 150px"
-        placeholder="새로운 할 일"
-      />
-      <input type="submit" id="submitBtn" value="추가" />
-    </form>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
