@@ -1,0 +1,16 @@
+.counterContainer {
+  button {
+    width: 35px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 0 10px;
+    &:hover {
+      background-color: rgb(187, 187, 187);
+    }
+    &:active {
+      background-color: gray;
+    }
+  }
+}
