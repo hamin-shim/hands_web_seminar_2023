@@ -5,9 +5,12 @@ function App() {
   const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState([]);
   useEffect(() => {
-    const localTodos = localStorage.getItem("todos").split(",");
-    console.log(localTodos);
-    setToDos(localTodos);
+    let localTodos = localStorage.getItem("todos");
+    if (localTodos) {
+      localTodos = localStorage.getItem("todos").split(",");
+      console.log(localTodos);
+      setToDos(localTodos);
+    }
   }, []);
   useEffect(() => {
     console.log("todo changed");
@@ -25,8 +28,10 @@ function App() {
   };
   const deleteTodo = (id) => {
     let oldToDos = toDos;
-    oldToDos = oldToDos.filter((todo, idx) => idx !== id);
+    oldToDos = oldToDos.filter((todo, idx) => idx !== Number(id));
+    console.log(oldToDos);
     setToDos(oldToDos);
+    localStorage.setItem("todos", oldToDos);
   };
   const onTrashClick = (event) => {
     const element = event.target.parentNode;
