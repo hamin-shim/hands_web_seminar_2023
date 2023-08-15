@@ -8,6 +8,15 @@
 - Use React, make Todo app!(much much easily)
 - Deploy your own-website by Netlify
 
+### Assignment: React로 다시 재구성해서 웹사이트로 배포하기
+
+2주차 과제로 만든 투두 어플(개별 신기능 추가)을 React로 다시 재구성해보고, 웹사이트에 배포해서 링크 제출해주시면 됩니다! + 이번엔 디자인도 겸하여서 이쁘게 한 번 만들어보세요!
+투두 어플 필수 사양
+
+- 할 일 등록, 수정, 삭제
+- 빈 칸은 할일로 등재되지 않게 막기
+- 삭제할 때 삭제할 것인지 한 번 더 묻기
+
 ## 1 More about Javascript + Introduce Bootstrap(7/31)
 
 - [x] Understand how javascript works
